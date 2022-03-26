@@ -1,0 +1,22 @@
+import {Box, Flex, Text, Button} from '@chakra-ui/react'
+import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+
+function Banner({purpose, title1, title2, desc1, desc2, imgUrl, buttonText, linkName}) {
+  return (
+     <Flex flexWrap='wrap' justifyContent='center' alignItems='center' m='10'>
+        <Image src={imgUrl} width={500} height={300} />
+        <Box p='5'>
+        <Text color='gray.500' fontSize='sm' fontWeight='medium'>{purpose}</Text>
+        <Text fontSize='3xl' fontWeight='bold'>{title1}<br />{title2}</Text>
+        <Text fontSize='lg' paddingTop='3' paddingBottom='3' color='gray.700'>{desc1}<br />{desc2}</Text>
+        <Button fontSize='xl'>
+            <Link href={linkName}><a>{buttonText}</a></Link>
+        </Button>
+        </Box>
+  </Flex>
+  )
+}
+
+export default Banner
