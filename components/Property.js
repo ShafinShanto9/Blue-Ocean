@@ -1,5 +1,5 @@
-import { Avatar } from '@chakra-ui/avatar';
 import { Box, Flex, Text } from '@chakra-ui/layout';
+import { Avatar } from '@chakra-ui/react';
 import millify from 'millify';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,7 +8,6 @@ import { BsGridFill } from 'react-icons/bs';
 import { FaBath, FaBed } from 'react-icons/fa';
 import { GoVerified } from 'react-icons/go';
 import defaultImage from '../assests/images/house.jpg';
-
 
 const Property = ({ property: { coverPhoto, price, rentFrequency, rooms, title, baths, area, agency, isVerified, externalID }}) => {
   return (
