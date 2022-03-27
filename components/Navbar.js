@@ -7,7 +7,7 @@ import { FiKey } from 'react-icons/fi'
 
 const Navbar = () => {
   return (
-      <Flex p="2" borederBottom="1px" borderColor="gray.300" boxShadow='base' >
+      <Flex p="2" boxShadow='base' bgColor="gray.100">
           <Box fontSize="3xl" color="blue.300" fontWeight="bold">
               <Link href="/" paddingLeft="2" >Blue Ocean</Link>
           </Box>
