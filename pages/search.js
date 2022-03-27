@@ -6,11 +6,10 @@ import SearchFilters from '../components/SearchFilters'
 import Property from '../components/Property'
 import noresult from '../assests/images/noresult.svg'
 import Image from 'next/image'
-import query from 'express/lib/middleware/query'
 import { baseUrl, fetchApi } from '../utils/fetchApi'
 
 
-const search = ({properties}) => {
+const Search = ({ properties }) => {
     const [searchFilters, setSerchFilters] = useState(false)
     const router = useRouter()
 
@@ -55,7 +54,7 @@ const search = ({properties}) => {
   )
 }
 
-export default search
+export default Search
 
 // Get Filtering api data
 
